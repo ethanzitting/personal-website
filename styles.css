@@ -114,7 +114,7 @@ main {
 .social-icon {
 	height: 1.5em;
 	width: auto;
-	margin: 5px;
+	margin: 10px;
 	margin-top: 30px;
 }
 
@@ -125,14 +125,64 @@ main {
 .headShot {
 	border-radius: 50%;
 	max-height: 200px;
+	border: 3px solid #D8C3A5;
 }
 
 
 .second-div {
+	justify-content: center;
+}
+
+
+.skill-list {
+	width: 40%;
+	text-align: center;
+}
+
+.skill-list>div {
+	display: flex;
+	justify-content: center;
+}
+
+.skill-list .left-side {
+	text-align: right;
+	margin: 5px;
+}
+
+.skill-list .right-side {
+	text-align: left;
+	margin: 5px;
+}
+
+.skill-list>div>div {
+	width: 50%;
+}
+
+.align-right {
+	text-align: right;
 }
 
 
 .third-div {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.third-div h1 {
+	margin-bottom: 20px;
+}
+
+.third-div a {
+	width: 50%;
+}
+
+.page-preview {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin:10px auto;
+	border-radius: 2px;
+	border: 3px solid #D8C3A5;
 }
 
 /* for screens larger than mobile */
@@ -155,7 +205,6 @@ footer {
 	width: 100%;
 	display: inline-flex;
 	align-items: center;
-	position: absolute;
 	bottom: 0px;
 }
 
@@ -178,6 +227,10 @@ body {
 	font-family: Lato;
 	font-weight: 700;
 	color: rgb(80, 80, 80);
+}
+
+h1 {
+	font-size: 24px;
 }
 
 p {
