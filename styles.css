@@ -1,15 +1,125 @@
+/*
+=======================================
+TABLE OF CONTENTS
+=======================================
+
+-links and buttons
+-header
+-main
+-footer
+-typography
+
+*/
+
+/*
+======================================
+LINKS AND BUTTONS
+======================================
+*/
+.link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+/*
+======================================
+HEADER
+======================================
+*/
+
 header {
 	height: 40px;
 	width: 100%;
 	display: inline-flex;
 	align-items: center;
-	font-family: arial,sans-serif;
-	font-size: 13px;
 	margin-top: 15px;
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.home, .email, .slipwell, .headerLinkedin, .headerGithub {
-	margin: 10px;
+.header {
+	padding: 10px;
+}
+
+.accent1 {
+	background-color: #eAE7DC;
+	color: rgb(80, 80, 80);
+	border: 1px solid #8E8D8A;
+}
+
+.trim-left-border {
+	border-left: none;
+}
+
+.accent2 {
+	color: #E85A4F;
+	text-decoration: none;
+}
+
+.push-right {
+	margin-left: auto;
+}
+
+.left-edge {
+	margin-left: 20px;
+}
+
+.right-edge {
+	margin-right: 20px;
+}
+
+
+/*
+========================================
+MAIN
+========================================
+*/
+
+body {
+	background-color: #eAE7DC;
+}
+
+main {
+	width: 95vw;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-right: auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.first-div, .second-div, .third-div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.first-div {
+	width: 100%;
+}
+
+.first-text {
+ margin-left: auto;
+ margin-top: auto;
+ margin-bottom: auto;
+ margin-right: 10px;
+}
+
+.first-text h1{
+	margin-bottom: 10px;
+}
+
+.social-icon {
+	height: 1.5em;
+	width: auto;
+	margin: 5px;
+	margin-top: 30px;
+}
+
+.first-image {
+	margin-right: auto;
 }
 
 .headShot {
@@ -17,44 +127,60 @@ header {
 	max-height: 200px;
 }
 
+
+.second-div {
+}
+
+
+.third-div {
+}
+
+/* for screens larger than mobile */
+@media (min-width: 800px) {
+	main {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*
+========================================
+FOOTER
+========================================
+*/
+
 footer {
 	height: 40px;
 	width: 100%;
 	display: inline-flex;
 	align-items: center;
-	opacity: 75%;
 	position: absolute;
 	bottom: 0px;
-	font-family: arial,sans-serif;
-	font-size: 14px;
-	background: #f2f2f2;
-	border-top: 1px solid #e4e4e4;
-		}
-
-.copywrite, .footerLinkedin, .footerGithub {
-	margin: 10px;
 }
 
-a:link {
-	color: #000;
-	text-decoration: none;
+.footer {
+	padding: 10px;
+}
+
+.accent3 {
+	color: rgb(80, 80, 80);
 	cursor: default;
 }
 
-a:visited {
-	color: #000;
-	text-decoration: none;
-	cursor: default;
+/*
+===============================================
+TYPOGRAPHY
+===============================================
+*/
+
+body {
+	font-family: Lato;
+	font-weight: 700;
+	color: rgb(80, 80, 80);
 }
 
-a:hover {
-	color: #000;
-	text-decoration: underline;
-	cursor: default;
-}
-
-a:active {
-	color: #000;
-	text-decoration: none;
-	cursor: default;
+p {
+	font-family: Montserrat;
+	font-weight: 500;
 }

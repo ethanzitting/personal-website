@@ -19,27 +19,61 @@
 		<!-- Link to JS -->
 		<script src="main.js" defer></script>
 
+		<!--Imports Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	</head>
 	<body>
 
 		<header>
-			<div class="home"><a href="">Ethan Zitting</a></div>
-			<div class="email"><a href="">Email Me</a></div>
-			<div class="slipwell"><a href="">Slipwell Industries</a></div>
-			<div class="headerLinkedin"><a href="">LinkedIn</a></div>
-			<div class="headerGithub"><a href="">GitHub</a></div>
+			<div class="header link accent1 left-edge">Professional</div>
+			<div class="header link accent1 trim-left-border">Personal</div>
+			<div class="header link push-right accent2"><a href="mailto:ethanzitting@gmail.com" class="accent2">Email Me</a></div>
+			<div class="header link accent2 right-edge"><a href="https://slipwellindustries.com" class="accent2">Slipwell Industries</a></div>
 		</header>
 
 		<main>
-			<div class="headShotDiv">
-				<img class="headShot" src="headShot.jpg" alt="Head Shot of Ethan">
+
+			<div class="first-div flex">
+				<div class="first-text">
+					<h1>Hi, I'm Ethan Zitting.</h1>
+					<p>I make websites.</p>
+					<a href="mailto:ethanzitting@gmail.com"><img class="social-icon" src="./images/Gmail.png" alt="Email Icon"></a>
+					<a href="https://www.linkedin.com/in/ethanzitting/"><img class="social-icon" src="./images/LinkedIn.png" alt="LinkedIn Icon"></a>
+					<a href="https://github.com/ethanzitting"><img class="social-icon" src="./images/GitHub.png" alt="GitHub Icon"></a>
+				</div>
+				<div class="first-image">
+					<img class="headShot" src="./images/headShot.jpg" alt="Head Shot of Ethan">
+				</div>
+			</div>
+
+			<div class="second-div flex">
+				<div>
+					<h1>Skills and Strengths</h1>
+					<p>Explanation of my skills and personality</p>
+				</div>
+				<div>
+					Link to Portfolio
+				</div>
+			</div>
+
+			<div class="third-div flex">
+				Work History
+				<div>
+					Current Job
+				</div>
+				<div>
+					Most Recent Job
+				</div>
 			</div>
 		</main>
 
 		<footer>
-			<div class="copywrite"><a href="">Copywrite</a></div>
-			<div class="footerLinkedin"><a href="">LinkedIn</a></div>
-			<div class="footerGithub"><a href="">GitHub</a></div>
+			<div class="footer link left-edge"><a href="https://www.linkedin.com/in/ethanzitting/" class="accent2">LinkedIn</a></div>
+			<div class="footer link"><a href="https://github.com/ethanzitting" class="accent2">GitHub</a></div>
+			<div class="footer push-right right-edge accent3">© 2020</div>
 		</footer>
 
 	</body>
