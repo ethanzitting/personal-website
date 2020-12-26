@@ -45,6 +45,15 @@ header {
 	background-color: #eAE7DC;
 	color: rgb(80, 80, 80);
 	border: 1px solid #8E8D8A;
+	/* Listens for any scaling that .accent1 does and controls the change. */
+	transition: scale 100ms ease-in-out;
+}
+
+.accent1:hover {
+	transition: [property] [duration] [ease] [delay];
+	transform: scale(1.05);
+	border: 1px solid #8E8D8A;
+	text-decoration: none;
 }
 
 .trim-left-border {
