@@ -21,6 +21,14 @@ LINKS AND BUTTONS
 	text-decoration: underline;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 
 /*
 ======================================
