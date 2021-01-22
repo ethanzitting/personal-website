@@ -1,5 +1,3 @@
-# website-alpha
-
-Here I am starting my personal website. It will be done from scratch without a website builder and will be a work in progress for a while.
-
 # personal-website
+
+I am developing this personal website for my own purposes. It will give a good demonstration of who I am professionally and personally.
