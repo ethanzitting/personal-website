@@ -17,18 +17,17 @@ LINKS AND BUTTONS
 ======================================
 */
 .link:hover {
-	cursor: pointer;
-	text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /*
 ======================================
@@ -37,54 +36,53 @@ HEADER
 */
 
 header {
-	height: 40px;
-	width: 100%;
-	display: inline-flex;
-	align-items: center;
-	margin-top: 15px;
-	background-color: rgba(0, 0, 0, 0);
+  height: 40px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .header {
-	padding: 10px;
+  padding: 10px;
 }
 
 .accent1 {
-	background-color: #eAE7DC;
-	color: rgb(80, 80, 80);
-	border: 1px solid #8E8D8A;
-	/* Listens for any scaling that .accent1 does and controls the change. */
-	transition: scale 100ms ease-in-out;
+  background-color: #eae7dc;
+  color: rgb(80, 80, 80);
+  border: 1px solid #8e8d8a;
+  /* Listens for any scaling that .accent1 does and controls the change. */
+  transition: scale 100ms ease-in-out;
 }
 
 .accent1:hover {
-	transition: [property] [duration] [ease] [delay];
-	transform: scale(1.05);
-	border: 1px solid #8E8D8A;
-	text-decoration: none;
+  transition: [property] [duration] [ease] [delay];
+  transform: scale(1.05);
+  border: 1px solid #8e8d8a;
+  text-decoration: none;
 }
 
 .trim-left-border {
-	border-left: none;
+  border-left: none;
 }
 
 .accent2 {
-	color: #E85A4F;
-	text-decoration: none;
+  color: #e85a4f;
+  text-decoration: none;
 }
 
 .push-right {
-	margin-left: auto;
+  margin-left: auto;
 }
 
 .left-edge {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 .right-edge {
-	margin-right: 20px;
+  margin-right: 20px;
 }
-
 
 /*
 ========================================
@@ -93,134 +91,138 @@ MAIN
 */
 
 body {
-	background-color: #eAE7DC;
+  background-color: #eae7dc;
 }
 
 main {
-	width: 95vw;
-	margin-left: auto;
-	margin-top: 50px;
-	margin-right: auto;
+  width: 95vw;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: auto;
 }
 
 .flex {
-	display: flex;
-}
-
-.first-div, .second-div, .third-div {
-	margin-top: 10px;
-	margin-bottom: 10px;
+  display: flex;
 }
 
 
-.first-div {
-	width: 100%;
+/* Bio and Headshot */
+.intro-container,
+.second-div,
+.third-div {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.first-text {
- margin-left: auto;
- margin-top: auto;
- margin-bottom: auto;
- margin-right: 10px;
+.intro-container {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.first-text h1{
-	margin-bottom: 10px;
+.bio-container {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.bio-container h1 {
+  margin-bottom: 10px;
 }
 
 .social-icon {
-	height: 1.5em;
-	width: auto;
-	margin: 10px;
-	margin-top: 30px;
+  height: 1.5em;
+  width: auto;
+  margin: 10px;
+  margin-top: 30px;
 }
 
-.first-image {
-	margin-right: auto;
+.pic-container {
+  margin-right: auto;
 }
 
 .headShot {
-	border-radius: 50%;
-	max-height: 200px;
-	border: 3px solid #D8C3A5;
+  border-radius: 50%;
+  max-height: 200px;
+  border: 3px solid #d8c3a5;
 }
 
-
+/* Technologies and Traits */
 .second-div {
-	justify-content: center;
+  justify-content: center;
 }
-
 
 .skill-list {
-	width: 40%;
-	text-align: center;
+  width: 40%;
+  text-align: center;
 }
 
-.skill-list>div {
-	display: flex;
-	justify-content: center;
+.skill-list > div {
+  display: flex;
+  justify-content: center;
 }
 
 .skill-list .left-side {
-	text-align: right;
-	margin: 5px;
+  text-align: right;
+  margin: 5px;
 }
 
 .skill-list .right-side {
-	text-align: left;
-	margin: 5px;
+  text-align: left;
+  margin: 5px;
 }
 
-.skill-list>div>div {
-	width: 50%;
+.skill-list > div > div {
+  width: 50%;
 }
 
 .align-right {
-	text-align: right;
+  text-align: right;
 }
 
-
+/* Work History */
 .third-div {
-	margin-top: 50px;
-	text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .third-div h1 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .third-div a {
-	width: 50%;
+  width: 50%;
 }
 
 .page-preview {
-	display: block;
-	width: 50%;
-	height: auto;
-	margin:10px auto;
-	border-radius: 2px;
-	border: 3px solid #D8C3A5;
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 2px;
+  border: 3px solid #d8c3a5;
 }
 
 /* for screens larger than mobile */
 @media (min-width: 800px) {
-	main {
-		width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  main {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .fourth-div {
-	display: flex;
+  display: flex;
 }
 
 .job-tile {
-	width: 200px;
-	border: 1px solid grey;
-	border-radius: 4px;
-	box-shadow: 1px 1px 4px black;
-	margin: 10px;
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px black;
+  margin: 10px;
 }
 
 /*
@@ -230,20 +232,20 @@ FOOTER
 */
 
 footer {
-	height: 40px;
-	width: 100%;
-	display: inline-flex;
-	align-items: center;
-	bottom: 0px;
+  height: 40px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  bottom: 0px;
 }
 
 .footer {
-	padding: 10px;
+  padding: 10px;
 }
 
 .accent3 {
-	color: rgb(80, 80, 80);
-	cursor: default;
+  color: rgb(80, 80, 80);
+  cursor: default;
 }
 
 /*
@@ -253,16 +255,16 @@ TYPOGRAPHY
 */
 
 body {
-	font-family: Lato;
-	font-weight: 700;
-	color: rgb(80, 80, 80);
+  font-family: Lato;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
 }
 
 h1 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 p {
-	font-family: Montserrat;
-	font-weight: 500;
+  font-family: Montserrat;
+  font-weight: 500;
 }
