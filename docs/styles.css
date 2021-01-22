@@ -105,7 +105,6 @@ main {
   display: flex;
 }
 
-
 /* Bio and Headshot */
 .intro-container,
 .second-div,
@@ -149,7 +148,7 @@ main {
 }
 
 /* Technologies and Traits */
-.second-div {
+.skills-container {
   justify-content: center;
 }
 
@@ -163,12 +162,12 @@ main {
   justify-content: center;
 }
 
-.skill-list .left-side {
+.tech-container {
   text-align: right;
   margin: 5px;
 }
 
-.skill-list .right-side {
+.trait-container {
   text-align: left;
   margin: 5px;
 }
@@ -211,10 +210,6 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.fourth-div {
-  display: flex;
 }
 
 .job-tile {

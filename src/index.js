@@ -45,26 +45,29 @@ let ethan = {
   },
 };
 
-let portfolio = {
-  toDo: {
+let portfolio = [
+  {
+    title: "A To-Do List App",
     link: "https://ethanzitting.github.io/to-do-app/",
-    mobileImage: "",
-    desktopImage: "",
+    mobileSrc: "",
+    desktopSrc: "../images/to-do-screenshot.png",
   },
-  acmeCafe: {
+  {
+    title: "A Joke Restaurant Landing Page",
     link: "https://ethanzitting.github.io/ACME-Cafe/",
-    modileImage: "",
-    desktopImage: "",
+    modileSrc: "",
+    desktopSrc: "../images/acme-cafe-screenshot.png",
   },
-  ticTacToe: {
+  {
+    title: "A Tic-Tac-Toe Web Game",
     link: "https://ethanzitting.github.io/tic-tac-toe/",
-    modileImage: "",
-    desktopImage: "",
+    modileSrc: "",
+    desktopSrc: "../images/tic-tac-toe-screenshot.png",
   },
-};
+];
 
-let workHistory = {
-  celestine: {
+let workHistory = [
+  {
     title: "Delivery Driver",
     company: "Celestine Logistics",
     focus: "Standard Package Delivery",
@@ -74,7 +77,7 @@ let workHistory = {
     I've honestly had a lot of fun exploring basically every part of Colorado Springs and the surrounding towns.
     And, I've been powering through my to-do list of audiobooks.`,
   },
-  capstone: {
+  {
     title: "Inside Sales Rep",
     company: "Capstone Tax Consulting",
     focus: "Cold-Call Phone Sales",
@@ -82,7 +85,7 @@ let workHistory = {
     This was a cold-calling position selling tax debt negotiation services, so it was very difficult.
     I'm grateful that is was difficult. It made it tremendously valuable experience.`,
   },
-  zittingSteel: {
+  {
     title: "Project Manager",
     company: "Zitting Steel",
     focus: "Project Management, Construction R&D, Conflict Resolution",
@@ -93,7 +96,7 @@ let workHistory = {
     I learned BluBeam bidding software and completed several of our bids.
     Errors and conflict were greatly reduced, and work has been completed.`,
   },
-  slipwell: {
+  {
     title: "C.O.O.",
     company: "Slipwell Industries",
     focus: "Business Development, Construction R&D, Project Management",
@@ -105,7 +108,7 @@ let workHistory = {
     I oversaw the production of marketing material.
     I managed the social media and online presence of the company.`,
   },
-  flickertail: {
+  {
     title: "C.O.O.",
     company: "Flickertail Holdings",
     focus: "Business Development, R&D, and Financial Decision-Making",
@@ -114,7 +117,7 @@ let workHistory = {
     I traveled and took part in negotiations.
     I became familiar with using online financial exchanges.`,
   },
-};
+];
 
 let loadProf = () => {
   // Clear Existing Page
@@ -123,8 +126,8 @@ let loadProf = () => {
   // Build HeadShot and Intro Bio
   // Build broad container
   const introContainer = makeDiv("main", "intro-container");
-  introContainer.classList.add('intro-container', 'flex');
-  
+  introContainer.classList.add("intro-container", "flex");
+
   // Build HTML for my intro text and links
   let bioHTML = `<h1>${ethan.header}</h1>`;
   bioHTML += `<br><p>${ethan.bio}</p>`;
@@ -138,28 +141,76 @@ let loadProf = () => {
 
   // Build the container for my intro text and links
   const bioContainer = makeDiv("#intro-container", "bio-container", bioHTML);
-  bioContainer.classList.add('bio-container');
-  
+  bioContainer.classList.add("bio-container");
+
   // Builds headshot on page
-  let picHTML = `<img class="headShot" src="${ethan.headshot.link}" alt="${ethan.headshot.alt}"/>`
+  let picHTML = `<img class="headShot" src="${ethan.headshot.link}" alt="${ethan.headshot.alt}"/>`;
   const picContainer = makeDiv("#intro-container", "pic-container", picHTML);
-  picContainer.classList.add('pic-container');
+  picContainer.classList.add("pic-container");
 
   // Build Technologies List and Character Traits
-  const skillsContainer = makeDiv('main', 'skills-container');
-  skillsContainer.classList.add('skills-container', 'flex');
+  const skillsContainer = makeDiv("main", "skills-container");
+  skillsContainer.classList.add("skills-container", "flex");
 
   // Build HTML for and add technologies div
   let techHTML = `<h1>Technologies</h1>`;
   for (let i = 0; i < ethan.technologies.length; i++) {
     techHTML += `<br>${ethan.technologies[i]}`;
   }
-  const techContainer = makeDiv('#skills-container', 'techContainer', techHTML);
+  const techContainer = makeDiv(
+    "#skills-container",
+    "tech-container",
+    techHTML
+  );
+  techContainer.classList.add("tech-container");
+
+  // Build HTML for and add character traits list
+  let traitHTML = `<h1>Character Traits</h1>`;
+  for (let i = 0; i < ethan.traits.length; i++) {
+    traitHTML += `<br>${ethan.traits[i]}`;
+  }
+  const traitContainer = makeDiv(
+    "#skills-container",
+    "trait-container",
+    traitHTML
+  );
+  traitContainer.classList.add("trait-container");
 
   // Build Work History
+  let workContainer = makeDiv(
+    "main",
+    "work-container",
+    `<h1>Work History</h1>`
+  );
+  workContainer.classList.add("work-container");
+
+  // Add Container for job tiles
+  let workTileContainer = makeDiv("#work-container", "work-tile-container");
+  workTileContainer.classList.add("work-tile-container", "flex");
+
+  // Build Job Tiles
+  for (let i = 0; i < workHistory.length; i++) {
+    let tileHTML = `<h1>${workHistory[i].title}</h1>
+                    <h3>${workHistory[i].company}</h3>
+                    <p>${workHistory[i].focus}</p>`;
+    let tile = makeDiv("#work-tile-container", `job-${i}`, tileHTML);
+    tile.classList.add("job-tile");
+  }
 
   // Build Portfolio
+  let portContainer = makeDiv("main", "port-container", `<h1>Portfolio</h1>`);
+  portContainer.classList.add("port-container");
+  let portTileContainer = makeDiv("#port-container", "port-tile-container");
+
+  for (let i = 0; i < portfolio.length; i++) {
+    let tileHTML = `<h3>${portfolio[i].title}</h3>
+                    <a href="${portfolio[i].link}" target="_blank">
+                    <img src="${portfolio[i].desktopSrc}"/></a>`;
+    let tile = makeDiv("#port-tile-container", `port-${i}`, tileHTML);
+  }
 };
+
+loadProf();
 
 profBtn.addEventListener("click", () => {
   loadProf();
