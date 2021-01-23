@@ -9,7 +9,7 @@ let ethan = {
   bio:
     "I'm skilled at starting companies, managing projects, and building websites.",
   headshot: {
-    link: "../images/headShot.jpg",
+    link: "../images/headshot.jpg",
     alt: "Headshot of Ethan",
   },
   technologies: [
@@ -29,17 +29,17 @@ let ethan = {
   socials: {
     email: {
       link: "mailto:ethanzitting@gmail.com",
-      src: "../images/Gmail.png",
+      src: "../images/gmail.png",
       alt: "Email Icon",
     },
     linkedIn: {
       link: "https://www.linkedin.com/in/ethanzitting/",
-      src: "../images/LinkedIn.png",
+      src: "../images/linkedin.png",
       alt: "LinkedIn Icon",
     },
     github: {
       link: "https://github.com/ethanzitting",
-      src: "../images/GitHub.png",
+      src: "../images/github.png",
       alt: "GitHub Icon",
     },
   },
@@ -50,19 +50,19 @@ let portfolio = [
     title: "A To-Do List App",
     link: "https://ethanzitting.github.io/to-do-app/",
     mobileSrc: "",
-    desktopSrc: "../images/to-do-screenshot.png",
+    desktopSrc: "../images/to-do-desktop.png",
   },
   {
     title: "A Joke Restaurant Landing Page",
     link: "https://ethanzitting.github.io/ACME-Cafe/",
     modileSrc: "",
-    desktopSrc: "../images/acme-cafe-screenshot.png",
+    desktopSrc: "../images/acme-cafe-desktop.png",
   },
   {
     title: "A Tic-Tac-Toe Web Game",
     link: "https://ethanzitting.github.io/tic-tac-toe/",
     modileSrc: "",
-    desktopSrc: "../images/tic-tac-toe-screenshot.png",
+    desktopSrc: "../images/tic-tac-toe-desktop.png",
   },
 ];
 
