@@ -1,10 +1,17 @@
-const makeDiv = (parentID, childID, htmlToUse, placement) => {
-  const parent = document.querySelector(`${parentID}`);
+import { Variable } from "eslint-scope";
+
+const makeDiv = (divObject) => {
+  const parent = document.querySelector(`${divObject.parentId}`);
   const child = document.createElement("div");
-  child.setAttribute("id", `${childID}`);
-  htmlToUse = htmlToUse || "";
-  child.innerHTML = htmlToUse;
-  placement = placement || "after";
+  if (divObject.childId) {
+    child.setAttribute("id", `${divObject.childId}`);
+  }
+  html = divObject.html || "";
+  child.innerHTML = html;
+  for (let i = 0; i < divObject.classList.length; i++) {
+    child.classList.add(`${divObject.classList[i]}`)
+  }
+  placement = divObject.placement || "after";
   if (placement == "before") {
     parent.prepend(child);
   } else if (placement == "after") {
@@ -14,3 +21,17 @@ const makeDiv = (parentID, childID, htmlToUse, placement) => {
 };
 
 export { makeDiv };
+
+makeDiv (parentID, childID (optional), htmlToUse (optional), placement (optional), [classlist (optional)])
+
+
+let object = {
+  parentId: 'parentId',
+  childId: 'childId',
+  htmlToUse: Variable,
+  classList: [
+    'one',
+    'two',
+    'three'
+  ]
+}

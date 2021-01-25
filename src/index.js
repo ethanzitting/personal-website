@@ -125,9 +125,16 @@ let loadProf = () => {
 
   // Build HeadShot and Intro Bio
   // Build broad container
-  const introContainer = makeDiv("main", "intro-container");
-  introContainer.classList.add("intro-container", "flex");
-
+  /*
+  const introContainer = makeDiv({
+    parentId: 'main',
+    childId: 'intro-container',
+    classList: [
+      'intro-container',
+      'flex'
+    ]
+  });
+  /*
   // Build HTML for my intro text and links
   let bioHTML = `<h1>${ethan.header}</h1>`;
   bioHTML += `<br><p>${ethan.bio}</p>`;
@@ -208,6 +215,7 @@ let loadProf = () => {
                     <img src="${portfolio[i].desktopSrc}"/></a>`;
     let tile = makeDiv("#port-tile-container", `port-${i}`, tileHTML);
   }
+  */
 };
 
 loadProf();
