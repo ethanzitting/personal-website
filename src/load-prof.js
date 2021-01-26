@@ -138,7 +138,7 @@ let loadProf = () => {
   for (let i = 0; i < portfolio.length; i++) {
     let tileHTML = `<h3>${portfolio[i].title}</h3>
                     <a href="${portfolio[i].link}" target="_blank">
-                    <img src="${portfolio[i].desktopSrc}"/></a>`;
+                    <img src="${portfolio[i].desktopSrc}" class="page-tile"/></a>`;
     makeDiv({
       parentId: "#port-tile-container",
       childId: `port-${i}`,

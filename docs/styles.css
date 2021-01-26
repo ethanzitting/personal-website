@@ -108,8 +108,8 @@ main {
 
 /* Bio and Headshot */
 .intro-container,
-.second-div,
-.third-div {
+.work-container,
+.port-container {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -182,20 +182,31 @@ main {
 }
 
 /* Work History */
-.third-div {
+
+.job-tile {
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px black;
+  margin: 10px;
+}
+
+/* Portfolio */
+
+.port-container {
   margin-top: 50px;
   text-align: center;
 }
 
-.third-div h1 {
+.port-container h1 {
   margin-bottom: 20px;
 }
 
-.third-div a {
+.port-container a {
   width: 50%;
 }
 
-.page-preview {
+.page-tile {
   display: block;
   width: 50%;
   height: auto;
@@ -213,13 +224,6 @@ main {
   }
 }
 
-.job-tile {
-  width: 200px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  box-shadow: 1px 1px 4px black;
-  margin: 10px;
-}
 
 /*
 ========================================
