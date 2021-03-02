@@ -3,7 +3,7 @@ let ethan = {
   bio:
     "I'm skilled at starting companies, managing projects, and building websites.",
   headshot: {
-    link: "./images/headshot.jpg",
+    link: "./images/headshot.webp",
     alt: "Headshot of Ethan Zitting",
   },
   technologies: [
@@ -47,19 +47,19 @@ let portfolio = [
     title: "A To-Do List App",
     link: "https://ethanzitting.github.io/to-do-app/",
     mobileSrc: "",
-    desktopSrc: "./images/to-do-desktop.png",
+    desktopSrc: "./images/to-do-dt.webp",
   },
   {
     title: "A Joke Restaurant Landing Page",
     link: "https://ethanzitting.github.io/ACME-Cafe/",
     modileSrc: "",
-    desktopSrc: "./images/acme-cafe-desktop.png",
+    desktopSrc: "./images/acme-dt.webp",
   },
   {
     title: "A Tic-Tac-Toe Web Game",
     link: "https://ethanzitting.github.io/tic-tac-toe/",
     modileSrc: "",
-    desktopSrc: "./images/tic-tac-toe-desktop.png",
+    desktopSrc: "./images/tic-tac-dt.webp",
   },
 ];
 
