@@ -4,7 +4,7 @@ let ethan = {
     "I'm skilled at starting companies, managing projects, and building websites.",
   headshot: {
     link: "./images/headshot.jpg",
-    alt: "Headshot of Ethan",
+    alt: "Headshot of Ethan Zitting",
   },
   technologies: [
     "HTML/CSS/JS",
@@ -24,19 +24,22 @@ let ethan = {
     email: {
       link: "mailto:ethanzitting@gmail.com",
       src: "./images/gmail.png",
-      alt: "Email Icon",
+      alt: "Email Icon for Ethan Zitting",
     },
     linkedIn: {
       link: "https://www.linkedin.com/in/ethanzitting/",
       src: "./images/linkedin.png",
-      alt: "LinkedIn Icon",
+      alt: "LinkedIn Icon for Ethan Zitting",
     },
     github: {
       link: "https://github.com/ethanzitting",
       src: "./images/github.png",
-      alt: "GitHub Icon",
+      alt: "GitHub Icon for Ethan Zitting",
     },
   },
+  activeHobbies: ['Studying Web Development', 'Weightlifting', 'Video Games'],
+  dormantHobbies: ['Latin Dance Classes', 'Improv Classes', 'Brazailian Jiu Jitsu', 'Muay Thai', 'Rock Climbing'],
+  interests: ['Traveling', 'Vanlife', 'AI']
 };
 
 let portfolio = [
