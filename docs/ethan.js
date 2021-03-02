@@ -1,42 +1,4 @@
 let ethan = {
-  header: "Hi, I'm Ethan Zitting",
-  bio:
-    "I'm skilled at starting companies, managing projects, and building websites.",
-  headshot: {
-    link: "./images/headshot.webp",
-    alt: "Headshot of Ethan Zitting",
-  },
-  technologies: [
-    "HTML/CSS/JS",
-    "NodeJs",
-    "JQuery",
-    "AJAX",
-    "ESLint",
-    "Prettier",
-    "Webpack",
-    "Git",
-    "Linux",
-    "Bash",
-    "Python",
-  ],
-  traits: ["Organized", "Self-Motivated", "Coachable", "Genuine", "Passionate"],
-  socials: {
-    email: {
-      link: "mailto:ethanzitting@gmail.com",
-      src: "./images/gmail.png",
-      alt: "Email Icon for Ethan Zitting",
-    },
-    linkedIn: {
-      link: "https://www.linkedin.com/in/ethanzitting/",
-      src: "./images/linkedin.png",
-      alt: "LinkedIn Icon for Ethan Zitting",
-    },
-    github: {
-      link: "https://github.com/ethanzitting",
-      src: "./images/github.png",
-      alt: "GitHub Icon for Ethan Zitting",
-    },
-  },
   activeHobbies: ['Studying Web Development', 'Weightlifting', 'Video Games'],
   dormantHobbies: ['Latin Dance Classes', 'Improv Classes', 'Brazailian Jiu Jitsu', 'Muay Thai', 'Rock Climbing'],
   interests: ['Traveling', 'Vanlife', 'AI']
