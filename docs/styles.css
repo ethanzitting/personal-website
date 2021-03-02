@@ -16,18 +16,7 @@ TABLE OF CONTENTS
 LINKS AND BUTTONS
 ======================================
 */
-.link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 /*
 ======================================
@@ -35,54 +24,7 @@ HEADER
 ======================================
 */
 
-header {
-  height: 40px;
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0);
-}
 
-.header {
-  padding: 10px;
-}
-
-.accent1 {
-  background-color: #f3f3f3;
-  color: rgb(80, 80, 80);
-  border: 1px solid #8e8d8a;
-  /* Listens for any scaling that .accent1 does and controls the change. */
-  transition: scale 100ms ease-in-out;
-}
-
-.accent1:hover {
-  transition: [property] [duration] [ease] [delay];
-  transform: scale(1.05);
-  border: 1px solid #8e8d8a;
-  text-decoration: none;
-}
-
-.trim-left-border {
-  border-left: none;
-}
-
-.accent2 {
-  color: #DE354C;
-  text-decoration: none;
-}
-
-.push-right {
-  margin-left: auto;
-}
-
-.left-edge {
-  margin-left: 20px;
-}
-
-.right-edge {
-  margin-right: 20px;
-}
 
 /*
 ========================================
@@ -90,139 +32,22 @@ MAIN
 ========================================
 */
 
-body {
-  background-color: #f3f3f3;
-}
 
-main {
-  width: 95vw;
-  margin-left: auto;
-  margin-top: 50px;
-  margin-right: auto;
-}
-
-.flex {
-  display: flex;
-}
 
 
 /* Bio and Headshot */
-.intro-container,
-.work-container,
-.port-container {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
-.intro-container {
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bio-container {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 10px;
-}
-
-.bio-container h1 {
-  margin-bottom: 10px;
-}
-
-.social-icon {
-  height: 1.5em;
-  width: auto;
-  margin: 10px;
-  margin-top: 30px;
-}
-
-.pic-container {
-  margin-right: auto;
-}
-
-.headShot {
-  border-radius: 50%;
-  max-height: 200px;
-  border: 3px solid #932432;
-}
 
 /* Technologies and Traits */
-.skills-container {
-  justify-content: center;
-}
 
-.skill-list {
-  width: 40%;
-  text-align: center;
-}
-
-.skill-list > div {
-  display: flex;
-  justify-content: center;
-}
-
-.tech-container {
-  text-align: right;
-  margin: 5px;
-}
-
-.trait-container {
-  text-align: left;
-  margin: 5px;
-}
-
-.skill-list > div > div {
-  width: 50%;
-}
-
-.align-right {
-  text-align: right;
-}
 
 /* Work History */
 
-.job-tile {
-  width: 200px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  box-shadow: 1px 1px 4px black;
-  margin: 10px;
-}
+
 
 /* Portfolio */
 
-.port-container {
-  margin-top: 50px;
-  text-align: center;
-}
 
-.port-container h1 {
-  margin-bottom: 20px;
-}
-
-.port-container a {
-  width: 50%;
-}
-
-.page-tile {
-  display: block;
-  width: 50%;
-  height: auto;
-  margin: 10px auto;
-  border-radius: 2px;
-  border: 3px solid #283747;
-}
-
-/* for screens larger than mobile */
-@media (min-width: 800px) {
-  main {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 
 /*
@@ -231,22 +56,7 @@ FOOTER
 ========================================
 */
 
-footer {
-  height: 40px;
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  bottom: 0px;
-}
 
-.footer {
-  padding: 10px;
-}
-
-.accent3 {
-  color: rgb(80, 80, 80);
-  cursor: default;
-}
 
 /*
 ===============================================
@@ -254,17 +64,4 @@ TYPOGRAPHY
 ===============================================
 */
 
-body {
-  font-family: Lato;
-  font-weight: 700;
-  color: rgb(80, 80, 80);
-}
 
-h1 {
-  font-size: 24px;
-}
-
-p {
-  font-family: Montserrat;
-  font-weight: 500;
-}

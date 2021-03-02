@@ -149,6 +149,8 @@ let loadProf = () => {
 
 };
 
+loadProf();
+
 export {
   loadProf
 }
