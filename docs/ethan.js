@@ -37,14 +37,6 @@ let workHistory = [
     And, I've been powering through my to-do list of audiobooks.`,
   },
   {
-    title: "Inside Sales Rep",
-    company: "Capstone Tax Consulting",
-    focus: "Cold-Call Phone Sales",
-    description: `I got this job in order to get my first major experience with sales.
-    This was a cold-calling position selling tax debt negotiation services, so it was very difficult.
-    I'm grateful that is was difficult. It made it tremendously valuable experience.`,
-  },
-  {
     title: "Project Manager",
     company: "Zitting Steel",
     focus: "Project Management, Construction R&D, Conflict Resolution",
@@ -66,16 +58,7 @@ let workHistory = [
     I kept the business books and filed the taxes.
     I oversaw the production of marketing material.
     I managed the social media and online presence of the company.`,
-  },
-  {
-    title: "C.O.O.",
-    company: "Flickertail Holdings",
-    focus: "Business Development, R&D, and Financial Decision-Making",
-    description: `Here I helped branstorm company ideas, research industries, and created financial models.
-    I established legal entities, and reviewed contracts.
-    I traveled and took part in negotiations.
-    I became familiar with using online financial exchanges.`,
-  },
+  }
 ];
 
 export {

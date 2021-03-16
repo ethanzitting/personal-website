@@ -7,7 +7,7 @@ TABLE OF CONTENTS
 -header
 -main
 -footer
--typography
+-typography and color
 
 */
 
@@ -17,6 +17,9 @@ LINKS AND BUTTONS
 ======================================
 */
 
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
 
 /*
 ======================================
@@ -32,14 +35,110 @@ MAIN
 ========================================
 */
 
+.limit-width {
+  max-width: 720px;
+}
 
+.translucent-card {
+  background-color: rgba(238, 251, 251, .7);
+  margin-top: 20px !important;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 
 /* Bio and Headshot */
+.round {
+  border-radius: 50%;
+}
+
+.spread {
+  line-height: 2rem;
+}
+
+.headshot {
+  max-height: 150px;
+}
 
 
 /* Technologies and Traits */
+.inline {
+  display: inline;
+}
 
+.row {
+  margin: 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.center-vertical {
+  padding-top: 1rem;
+}
+
+.extend-right {
+  width: 110%;
+}
+
+.techStyle {
+  padding: 4px;
+  margin: 2px;
+  border-radius: 3px;
+  line-height: 2em;
+}
+
+.epsilon-link, .epsilon-link:hover {
+  display: inline-block;
+  color: #199d8e;
+  height: 2em;
+  background-color: #e6e6e6;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #009a8f;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.to-do-link, .to-do-link:hover {
+  display: inline-block;
+  color: #E8EaED;
+  height: 2em;
+  background-color: #202124;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #E8EaED;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.acme-link {
+  display: inline-block;
+  color: #E8EaED;
+  height: 2em;
+  background-color: #3a2618;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #E8EaED;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.slipwell-link, .slipwell-link:hover {
+  color: #F90000;
+  background-color: rgb(247, 247, 247);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #303133;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 2em;
+}
 
 /* Work History */
 
@@ -64,4 +163,73 @@ TYPOGRAPHY
 ===============================================
 */
 
+body {
+  font-family: Roboto;
+  font-weight: 700;
+  color: #12232E;
+}
 
+h1, h3, h5 {
+  font-family: Roboto;
+  font-weight: 900;
+}
+
+
+body {
+  background-color: #eefbfb;
+  /* background: url(images/Untitled4.png);
+  background: url(images/ESvm3OMJsQ.svg); */
+  height: 100vh;
+  width: auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.svg-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1000;
+  height: auto;
+  width: auto;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.primary {
+  color: #12232E
+}
+
+.back-primary {
+  background-color: #12232E !important;
+}
+
+.secondary {
+  color: #007CC7;
+}
+
+.back-secondary {
+  background-color: #007CC7;
+}
+
+.tertiary {
+  color: #4DA8DA;
+}
+
+.back-tertiary {
+  background-color: #4DA8DA;
+}
+
+.contrast {
+  color: #203647;
+}
+
+.back-contrast {
+  background-color: #203647;
+}
+
+.invert {
+  color: #eefbfb !important;
+}
