@@ -115,7 +115,7 @@ MAIN
   line-height: 1.5em;
 }
 
-.acme-link {
+.acme-link, .acme-link:hover {
   display: inline-block;
   color: #E8EaED;
   height: 2em;
