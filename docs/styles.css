@@ -154,7 +154,23 @@ MAIN
 
 
 /* Portfolio */
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
+.website-card, .website-card .card {
+  display: inline-block;
+}
+
+.website-card {
+  margin: 10px;
+}
 
 
 

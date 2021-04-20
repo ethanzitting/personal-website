@@ -90,7 +90,7 @@ let userOnMobile = window.mobileCheck();
 
 for (let i = 0; i < portfolio.length; i++) {
   portfolioDiv.innerHTML += `
-    <a href="${portfolio[i].link}" target='_blank' rel='noreferrer'>
+    <a href="${portfolio[i].link}" class="website-card" target='_blank' rel='noreferrer'>
       <div class="card">
       <img class="card-img-top" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}">
         <div class="card-body">
