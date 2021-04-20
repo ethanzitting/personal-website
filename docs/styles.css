@@ -74,6 +74,10 @@ MAIN
   text-align: right;
 }
 
+.pad-right {
+  padding-right: 20px;
+}
+
 .center-block {
   margin-left: auto;
   margin-right: auto;
