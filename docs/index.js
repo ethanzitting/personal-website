@@ -1,34 +1,34 @@
 let portfolio = [
   {
-    title: 'Silver Ridge Contracting',
+    title: 'Client: Silver Ridge',
     link: 'https://silverridgecontracting.com',
     alt: "preview of Ethan Zitting's work on silverridgeconsulting.com",
     mobileSrc: './images/websites/silver-mb.png',
     desktopSrc: './images/websites/silver-dt.png'
   },
   {
-    title: 'Epsilon Integrated Solutions',
+    title: 'Client: Epsilon',
     link: 'https://epsilonintegratedsolutions.com',
     alt: "preview of Ethan Zitting's work on epsilonintegratedsolutions.com",
     mobileSrc: './images/websites/epsilon-mb.png',
     desktopSrc: './images/websites/epsilon-dt.png'
   },
   {
-    title: "A Weather Forecast App",
+    title: "Weather App",
     link: "https://ethanzitting.github.io/to-do-app/",
     alt: "preview of Ethan Zitting's work on his to-go-app",
     mobileSrc: './images/websites/weather-mb.png',
     desktopSrc: './images/websites/weather-dt.png'
   },
   {
-    title: "A To-Do List App",
+    title: "To-Do List App",
     link: "https://ethanzitting.github.io/to-do-app/",
     alt: "preview of Ethan Zitting's work on his to-go-app",
     mobileSrc: './images/websites/to-do-mb.png',
     desktopSrc: './images/websites/to-do-dt.png'
   },
   {
-    title: "A Joke Restaurant Landing Page",
+    title: "Meme Page",
     link: "https://ethanzitting.github.io/ACME-Cafe/",
     alt: "preview of Ethan Zitting's work on his acme-cafe-app",
     mobileSrc: './images/websites/acme-mb.png',

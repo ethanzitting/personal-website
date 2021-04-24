@@ -174,8 +174,13 @@ MAIN
 
 .website-card {
   margin: 10px;
-  width: 70%;
   height: auto;
+}
+
+.card-img-top {
+  height: 80px;
+  width: auto;
+  overflow: hidden;
 }
 
 /* custom scrollbar */
