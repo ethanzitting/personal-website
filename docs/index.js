@@ -88,6 +88,7 @@ window.mobileCheck = function() {
 // Generate the HTML for each element accordingly
 let userOnMobile = window.mobileCheck();
 
+
 for (let i = 0; i < portfolio.length; i++) {
   portfolioDiv.innerHTML += `
     <a href="${portfolio[i].link}" class="website-card" target='_blank' rel='noreferrer'>
