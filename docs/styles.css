@@ -178,9 +178,16 @@ MAIN
 }
 
 .card-img-top {
-  height: 80px;
   width: auto;
   overflow: hidden;
+}
+
+.mobileHeight {
+  height: 160px;
+}
+
+.desktopHeight {
+  height: 80px;
 }
 
 /* custom scrollbar */

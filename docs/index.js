@@ -92,7 +92,7 @@ for (let i = 0; i < portfolio.length; i++) {
   portfolioDiv.innerHTML += `
     <a href="${portfolio[i].link}" class="website-card" target='_blank' rel='noreferrer'>
       <div class="card">
-      <img class="card-img-top" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}">
+      <img class="card-img-top ${userOnMobile ? 'mobileHeight' : 'desktopHeight'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}">
         <div class="card-body">
           <h7 class="card-title">${portfolio[i].title}</h7>
         </div>
