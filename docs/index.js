@@ -15,7 +15,7 @@ let portfolio = [
   },
   {
     title: "Weather App",
-    link: "https://ethanzitting.github.io/to-do-app/",
+    link: "https://ethanzitting.github.io/weather-app/",
     alt: "preview of Ethan Zitting's work on his to-go-app",
     mobileSrc: './images/websites/weather-mb.png',
     desktopSrc: './images/websites/weather-dt.png'
