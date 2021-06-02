@@ -105,26 +105,20 @@ MAIN
 
 .to-do-link, .to-do-link:hover {
   display: inline-block;
-  color: #E8EaED;
   height: 2em;
-  background-color: #202124;
   padding: 5px;
   margin: 5px;
   border-radius: 4px;
-  border: 1px solid #E8EaED;
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
 .acme-link, .acme-link:hover {
   display: inline-block;
-  color: #E8EaED;
   height: 2em;
-  background-color: #3a2618;
   padding: 5px;
   margin: 5px;
   border-radius: 4px;
-  border: 1px solid #E8EaED;
   font-size: 1.5em;
   line-height: 1.5em;
 }
@@ -239,5 +233,5 @@ body {
 }
 
 .invert {
-  color: #eefbfb !important;
+  color: white !important;
 }
