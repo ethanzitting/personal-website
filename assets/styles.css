@@ -1,19 +1,13 @@
-/*
-=======================================
-TABLE OF CONTENTS
-=======================================
+/*=======================================
+Table of Contents
+  -Fonts, Colors, and Images
+  -Layout and Spacing
+=======================================*/
 
--typography and color
--links and buttons
--layout and spacing
 
-*/
-
-/*
-===============================================
+/*===============================================
 Fonts, Colors, and Images
-===============================================
-*/
+===============================================*/
 
 body {
   font-family: Arial;
@@ -28,26 +22,24 @@ main {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 4vh;
 }
 
 p {
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 3vh;
 }
 
 a, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/*
-========================================
-MAIN
-========================================
-*/
+/*========================================
+Layout and Spacing
+========================================*/
 
 html {
   -webkit-box-sizing: border-box;
@@ -69,10 +61,13 @@ body {
 }
 
 main {
+  position: relative;
   height: 92vh;
   width: 100%;
   max-width: 60vh;
   margin: auto;
+  padding: 2vh;
+  border-radius: 5px;
 }
 
 .heading-wrapper {
@@ -80,6 +75,29 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  height: 20vh;
+}
+
+.website-wrapper {
+  height: 50vh;
+}
+
+.contact-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  margin-bottom: 2vh;
 }
 
 
