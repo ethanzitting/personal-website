@@ -34,7 +34,18 @@ h2 {
 }
 
 a, a:hover, a:active, a:focus {
+  cursor: pointer;
   text-decoration: none;
+}
+
+button {
+  background-color: #FFFFFF;
+}
+
+button:hover, button:active {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
 }
 
 /*========================================
@@ -98,6 +109,19 @@ main {
 
 h1 {
   margin-bottom: 2vh;
+}
+
+.social-icon {
+  height: 6vh;
+  width: auto;
+  border-radius: 50%;
+}
+
+button {
+  height: 6vh;
+  width: 50%;
+  border: 2px solid grey;
+  border-radius: 1vh;
 }
 
 

@@ -1,10 +1,18 @@
 <urlset xmlns="https://ethanzitting.com/sitemap.xml">
   <url>
     <loc>https://ethanzitting.com</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ethanzitting.com</loc>
+    <lastmod>2021-08-02</lastmod>
   </url>
   <url>
     <loc>https://ethanzitting.com/index.html</loc>
-    <lastmod>2021-03-02</lastmod>
+    <lastmod>2021-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ethanzitting.com/index.html</loc>
+    <lastmod>2021-08-02</lastmod>
   </url>
 </urlset>
