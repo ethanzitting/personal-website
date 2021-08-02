@@ -95,6 +95,42 @@ main {
   height: 50vh;
 }
 
+.js-portfolio-div {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.site-card {
+  position: relative;
+  height: 30vh;
+  width: auto;
+}
+
+.mobile-preview {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.desktop-preview {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.details-pane {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .9);
+}
+
 .contact-wrapper {
   position: absolute;
   width: 100%;
