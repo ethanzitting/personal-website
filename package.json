@@ -1,0 +1,32 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "This is the code for my personal website: ethanzitting.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanzitting/personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanzitting/personal-website/issues"
+  },
+  "homepage": "https://github.com/ethanzitting/personal-website#readme",
+  "dependencies": {
+    "slick-slider": "^1.8.2",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.31",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0"
+  }
+}
