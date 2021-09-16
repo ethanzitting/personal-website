@@ -30,11 +30,11 @@ let portfolio = [
 ];
 
 
-const $ = (element) => document.querySelector(element);
+const bruh = (element) => document.querySelector(element);
 
 
 /* Loads portfolio of websites */
-const portfolioDiv = $('.js-portfolio-div');
+const portfolioDiv = bruh('.js-portfolio-div');
 
 // Determine if the user is on mobile or desktop
 window.mobileCheck = function() {
@@ -50,7 +50,7 @@ portfolioDiv.innerHTML = `
     <section class="js-slider slider"></section>
 `
 
-let sliderDiv = $('.js-slider');
+let sliderDiv = bruh('.js-slider');
 
 for (let i = 0; i < portfolio.length; i++) {
     sliderDiv.innerHTML += `
@@ -63,7 +63,7 @@ for (let i = 0; i < portfolio.length; i++) {
 }
 
 import $ from 'jquery';
-import 'slick-carousel';
+import 'slick-slider';
 
 export default function() {
     let $el = $('.js-slider');

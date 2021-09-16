@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ethanzitting/personal-website#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "slick-slider": "^1.8.2",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0"
