@@ -46,15 +46,38 @@ window.mobileCheck = function() {
 // Generate the HTML for each element accordingly
 let userOnMobile = window.mobileCheck();
 
+portfolioDiv.innerHTML = `
+    <section class="js-slider slider"></section>
+`
+
+let sliderDiv = $('.js-slider');
 
 for (let i = 0; i < portfolio.length; i++) {
-    portfolioDiv.innerHTML += `
-    <div class="site-card">
-        <a href="${portfolio[i].link}" target="_blank" rel="noopener noreferrer"><img class="${userOnMobile ? 'mobile-preview' : 'desktop-preview'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}"></a>
-        <div class="details-pane">
-        ${portfolio[i].title}
-    </div>
+    sliderDiv.innerHTML += `
+        <div class="site-card slide-text container">
+            <a href="${portfolio[i].link}" target="_blank" rel="noopener noreferrer"><img class="${userOnMobile ? 'mobile-preview' : 'desktop-preview'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}"></a>
+            <div class="details-pane">
+            ${portfolio[i].title}
+        </div>
   `
 }
 
+import $ from 'jquery';
+import 'slick-carousel';
+
+export default function() {
+    let $el = $('.js-slider');
+
+    $el.slick({
+        accessibility: true,
+        autoplaySpeed: 4000,
+        autoplay: true,
+        arrows: true,
+        draggable: true,
+        dots: false,
+        infinite: true,
+        mobileFirst: true,
+        slidesToShow: 1,
+    });
+}
 
