@@ -9,6 +9,7 @@ Table of Contents
 Fonts, Colors, and Images
 ===============================================*/
 
+
 body {
   font-family: Arial;
   font-weight: bold;
@@ -102,41 +103,13 @@ main {
   height: 50vh;
 }
 
-.js-portfolio-div {
+.slider {
   height: 30vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
 
-.site-card {
-  position: relative;
-  height: 30vh;
-  width: auto;
-}
-
-.mobile-preview {
-  height: 100%;
-  width: auto;
-  overflow: hidden;
-}
-
-.desktop-preview {
-  height: 100%;
-  width: auto;
-  overflow: hidden;
-}
-
-.details-pane {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 60%;
-  padding: 2.5%;
-  text-wrap: wrap;
+.mobile-preview, .desktop-preview {
+  width: 100px;
+  height: 100px;
 }
 
 .contact-wrapper {

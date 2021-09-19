@@ -1,3 +1,10 @@
+import $ from 'jquery';
+import 'slick-slider';
+import '../scss/index.scss';
+import '../../node_modules/slick-slider/slick/slick.scss';
+import '../../node_modules/slick-slider/slick/slick-theme.scss';
+
+
 let portfolio = [
     {
         title: 'Client: Silver Ridge',
@@ -29,13 +36,6 @@ let portfolio = [
     },
 ];
 
-
-const bruh = (element) => document.querySelector(element);
-
-
-/* Loads portfolio of websites */
-const portfolioDiv = bruh('.js-portfolio-div');
-
 // Determine if the user is on mobile or desktop
 window.mobileCheck = function() {
     let check = false;
@@ -46,38 +46,32 @@ window.mobileCheck = function() {
 // Generate the HTML for each element accordingly
 let userOnMobile = window.mobileCheck();
 
-portfolioDiv.innerHTML = `
-    <section class="js-slider slider"></section>
-`
-
-let sliderDiv = bruh('.js-slider');
 
 for (let i = 0; i < portfolio.length; i++) {
-    sliderDiv.innerHTML += `
-        <div class="site-card slide-text container">
+    $('.js-slider').html($('.js-slider').html() + `
+        <div class="slick-slide">
             <a href="${portfolio[i].link}" target="_blank" rel="noopener noreferrer"><img class="${userOnMobile ? 'mobile-preview' : 'desktop-preview'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}"></a>
             <div class="details-pane">
             ${portfolio[i].title}
         </div>
-  `
+    `)
+    console.log('fired');
 }
 
-import $ from 'jquery';
-import 'slick-slider';
+console.log('first');
 
-export default function() {
-    let $el = $('.js-slider');
-
-    $el.slick({
+$(document).ready(() => {
+    $('.js-slider').slick({
         accessibility: true,
         autoplaySpeed: 4000,
         autoplay: true,
         arrows: true,
         draggable: true,
-        dots: false,
+        dots: true,
         infinite: true,
         mobileFirst: true,
         slidesToShow: 1,
     });
-}
+    console.log('second');
+});
 

@@ -4,7 +4,8 @@
   "description": "This is the code for my personal website: ethanzitting.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": ""
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,11 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.2.0",
     "laravel-mix": "^6.0.31",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.39.2",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
   }
 }
