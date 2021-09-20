@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
     mode: 'development',
@@ -8,6 +9,11 @@ const config = {
         path: path.resolve(__dirname, 'web'),
         filename: 'main.js'
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            linkType: "text/css",
+        }),
+    ],
     module: {
         rules: [
             {
@@ -16,10 +22,22 @@ const config = {
             },
             {
                 test: /\.scss$/,
+                use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                }, {
+                    loader: "css-loader",
+                }, {
+                    loader: "sass-loader",
+                    options: {
+                        implementation: require("sass"),
+                    }
+                }]
+            },
+            {
+                test: /\.css$/,
                 use: [
-                    {loader: "sass-loader"},
                     {loader: "style-loader"},
-                    {loader: "css-loader"}
+                    {loader: "css-loader"},
                 ]
             },
             {
