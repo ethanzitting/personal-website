@@ -1,7 +1,6 @@
 body {
   font-weight: bold;
   font-size: 24px;
-
   background-image: url("images/full-bloom.png");
 }
 
@@ -71,6 +70,7 @@ main {
   width: 100%;
   max-width: 60vh;
   margin: auto;
+  margin-top: 4vh;
   padding: 2vh;
   border-radius: 5px;
 }
@@ -94,8 +94,8 @@ main {
 }
 
 .mobile-preview, .desktop-preview {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .contact-wrapper {
