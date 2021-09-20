@@ -26,6 +26,9 @@ const config = {
                     loader: MiniCssExtractPlugin.loader,
                 }, {
                     loader: "css-loader",
+                    options: {
+                        url: false,
+                    }
                 }, {
                     loader: "sass-loader",
                     options: {

@@ -58,16 +58,13 @@ for (let i = 0; i < portfolio.length; i++) {
             ${portfolio[i].title}
         </div>
     `)
-    console.log('fired');
 }
 
-console.log('first');
 
 $(document).ready(() => {
     $('.js-slider').slick({
         accessibility: true,
-        autoplaySpeed: 4000,
-        autoplay: true,
+        autoplay: false,
         arrows: true,
         draggable: true,
         dots: true,
@@ -75,6 +72,5 @@ $(document).ready(() => {
         mobileFirst: true,
         slidesToShow: 1,
     });
-    console.log('second');
 });
 
