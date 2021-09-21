@@ -1,12 +1,6 @@
 import $ from 'jquery';
 import 'slick-slider';
-// import '../scss/index.scss';
-import '../scss/styles.scss';
-import '../scss/reset.scss';
-
-import '../../node_modules/slick-slider/slick/slick.scss';
-import '../../node_modules/slick-slider/slick/slick-theme.scss';
-
+import '../scss/index.scss';
 
 let portfolio = [
     {
