@@ -91,7 +91,6 @@ main {
     border-radius: 5px;
     box-shadow: 1px 5px 5px 1px grey;
     background-color: white;
-    border-radius: 5px;
   }
 
   .slick-list {
@@ -130,7 +129,11 @@ main {
     border-radius: 50%;
   }
 
-  .slick-list, .slick-track, .slick-slide {
+  .slick-list,
+  .slick-track,
+  .slick-slide,
+  .slick-slide>div,
+  .website-wrapper {
     height: 100%;
     overflow: hidden;
   }
@@ -138,19 +141,19 @@ main {
   .mobile-preview, .desktop-preview {
     width: 100%;
     height: auto;
-    border-radius: 5px;
   }
 
   .slick-slide {
     position: relative;
+    width: 100%;
   }
 
   .details-pane {
     background-color: white;
     position: absolute;
     width: 100%;
-    height: 20%;
-    bottom: 0;
+    height: 5vh;
+    top: 25vh;
     left: 0;
     box-shadow: 1px 1px 7px 1px black;
   }
