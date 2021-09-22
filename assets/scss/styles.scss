@@ -84,24 +84,20 @@ main {
   }
 
   .slider {
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
     position: relative;
     height: 30vh;
     border-radius: 5px;
     box-shadow: 1px 5px 5px 1px grey;
     background-color: white;
+    border-radius: 5px;
   }
 
   .slick-list {
-    overflow: hidden;
+    //@media (max-width: 500px) {height: 40vh;}
   }
 
-  @media (max-width: 500px) {
-    .slider {
-      height: 40vh;
-    }
-  }
 
   .slick-arrow {
     background-color: white;
@@ -134,10 +130,15 @@ main {
     border-radius: 50%;
   }
 
+  .slick-list, .slick-track, .slick-slide {
+    height: 100%;
+    overflow: hidden;
+  }
 
   .mobile-preview, .desktop-preview {
     width: 100%;
     height: auto;
+    border-radius: 5px;
   }
 
   .slick-slide {
@@ -151,6 +152,7 @@ main {
     height: 20%;
     bottom: 0;
     left: 0;
+    box-shadow: 1px 1px 7px 1px black;
   }
 
   .slick-dots li button:before {

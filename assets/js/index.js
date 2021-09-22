@@ -47,7 +47,7 @@ let userOnMobile = window.mobileCheck();
 for (let i = 0; i < portfolio.length; i++) {
     $('.js-slider').html($('.js-slider').html() + `
         <div class="slick-slide">
-            <a href="${portfolio[i].link}" target="_blank" rel="noopener noreferrer"><img class="${userOnMobile ? 'mobile-preview' : 'desktop-preview'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}"></a>
+            <a class="website-anchor" href="${portfolio[i].link}" target="_blank" rel="noopener noreferrer"><img class="${userOnMobile ? 'desktop-preview' : 'desktop-preview'}" src="${userOnMobile ? portfolio[i].mobileSrc : portfolio[i].desktopSrc}" alt="${portfolio[i].alt}"></a>
             <div class="details-pane">
             ${portfolio[i].title}
         </div>
