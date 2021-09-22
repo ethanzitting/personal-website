@@ -8,7 +8,15 @@ let portfolio = [
         link: 'https://silverridgecontracting.com',
         alt: "preview of Ethan Zitting's work on this website",
         mobileSrc: 'images/silver-mb.png',
-        desktopSrc: 'images/silver-dt.png'
+        desktopSrc: 'images/silver-dt.png',
+        tools: [
+            {
+                toolName: "JavaScript",
+                toolSrc: "",
+                toolAlt: "",
+            },
+        ]
+
     },
     {
         title: 'Client: Epsilon',
