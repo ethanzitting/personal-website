@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-[#161616] text-[#9a9a9a]">
+<body class="relative max-w-[1100px] mx-auto bg-[#161616] text-[#9a9a9a]">
+<div class="w-full z-[-1] h-full bg-[length:160px] bg-repeat bg-center fixed top-0 left-0 bg-[url('/img/dots-light-grey.svg')]"></div>
 <div>
-    <div class="w-full h-full bg-[160px] bg-repeat bg-center fixed top-0 left-0 bg-[url('/img/dots-light-grey.svg')]"></div>
-    <nav class="flex flex-row items-center">
-        <button>
+    <nav class="w-full text-lg mx-auto px-2.5 py-4 flex flex-row items-center gap-[18px] border-b border-b-[#242424]">
+        <a href="mailto:ethan@ethanzitting.com" class="h-[60px] w-[60px] bg-[#1a1a1a] rounded-full flex items-center justify-center border border-[#242424]">
             <svg xmlns="http://www.w3.org/2000/svg"
-                 class="icon icon-tabler icon-tabler-mail" width="44"
+                 class="w-[25px] h-[25px]" width="44"
                  height="44" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" fill="none" stroke-linecap="round"
                  stroke-linejoin="round">
@@ -20,15 +20,15 @@
                 <rect x="3" y="5" width="18" height="14" rx="2"></rect>
                 <polyline points="3 7 12 13 21 7"></polyline>
             </svg>
-        </button>
-        <button>Get in touch</button>
-        <span class="ml-auto">
-            <a href="#">github</a>
-            /
-            <a href="#">LinkedIn</a>
-        </span>
+        </a>
+        <a href="mailto:ethan@ethanzitting.com">Get in touch</a>
+        <a href="https://github.com/ethanzitting"
+           rel="noreferrer nofollow noopener" target="_blank" class="ml-auto">GitHub</a>
+        <span>/</span>
+        <a href="https://github.com/ethanzitting"
+           rel="noreferrer nofollow noopener" target="_blank">LinkedIn</a>
     </nav>
-    <main class="max-w-[1100px] mx-auto pt-[90px] pb-[240px] flex flex-col gap-[180px]">
+    <main class="pt-[90px] pb-[240px] flex flex-col gap-[180px]">
         <section class="flex flex-col items-center gap-[18px]">
             <figure class="text-center">
                 <img
@@ -36,9 +36,9 @@
                         src="img/ethan-headshot.webp"
                         alt="A headshot image of Ethan Zitting"
                 >
-                <figcaption>Hi, I'm Ethan! 👋</figcaption>
+                <figcaption class="text-lg">Hi, I'm Ethan! 👋</figcaption>
             </figure>
-            <h1 class="glossy-text">Solving Complex Problems in the Web
+            <h1 class="glossy-text text-[56px] max-w-[40%] text-center leading-tight">Solving Complex Problems in the Web
                 Ecosystem</h1>
         </section>
         <section class="border-t border-t-[#242424] pt-[120px]">
@@ -80,9 +80,11 @@
     <footer class="flex flex-row items-center justify-between">
         <span>@2024 All Rights Reserved</span>
         <span>
-            <a href="#">github</a>
+            <a href="https://github.com/ethanzitting"
+               rel="noreferrer nofollow noopener" target="_blank">GitHub</a>
             /
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ethan-zitting-a1a735223/"
+               rel="noreferrer nofollow noopener" target="_blank">LinkedIn</a>
         </span>
     </footer>
 </div>

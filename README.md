@@ -1,15 +1,5 @@
-# personal-website
+Hi, I'm Ethan! 👋
 
-To install dependencies:
+I enjoy solving complex problems in the web ecosystem.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+You've reached the source code for my personal website: https://ethanzitting.com
