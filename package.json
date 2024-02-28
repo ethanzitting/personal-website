@@ -1,11 +1,15 @@
 {
   "name": "personal-website",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "tailwind": "bun run tailwindcss -i ./input.css -o ./public/output.css --watch",
+    "start": "bun run index.ts"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "dependencies": {
+    "express": "~4.16.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
