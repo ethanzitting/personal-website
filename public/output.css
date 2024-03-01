@@ -934,6 +934,10 @@ video {
   min-width: 220px;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -1482,6 +1486,10 @@ video {
 
 .gap-\[18px\] {
   gap: 18px;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2209,17 +2217,17 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[56px\] {
   font-size: 56px;
 }
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -2718,8 +2726,16 @@ video {
   top: -5%;
 }
 
+.hover\:min-h-\[110\%\]:hover {
+  min-height: 110%;
+}
+
 .hover\:w-\[110\%\]:hover {
   width: 110%;
+}
+
+.hover\:min-w-\[110\%\]:hover {
+  min-width: 110%;
 }
 
 .hover\:font-bold:hover {
