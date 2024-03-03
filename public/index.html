@@ -8,8 +8,8 @@
 </head>
 <body class="relative max-w-[1100px] mx-auto bg-[#161616] text-[#9a9a9a]">
 <div class="w-full z-[-1] h-full bg-[length:160px] bg-repeat bg-center fixed top-0 left-0 bg-[url('/img/dots-light-grey.svg')]"></div>
-<div>
-    <nav class="w-full text-lg mx-auto px-2.5 py-4 flex flex-row items-center gap-[18px] border-b border-b-[#242424]">
+<div class="font-normal">
+    <nav class="w-full md:text-lg mx-auto px-2.5 py-4 flex flex-row items-center gap-3 md:gap-[18px] border-b border-b-[#242424]">
         <a href="mailto:ethan@ethanzitting.com"
            class="glossy-link h-[60px] w-[60px] bg-[#1a1a1a] rounded-full flex items-center justify-center border border-[#242424]">
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
            rel="noreferrer nofollow noopener" class='glossy-link p-1'
            target="_blank">LinkedIn</a>
     </nav>
-    <main class="pt-[90px] pb-[240px] flex flex-col gap-[180px]">
+    <main class="pt-[90px] pb-[240px] flex flex-col gap-[120px] md:gap-[180px]">
         <section class="flex flex-col items-center gap-[18px]">
             <figure class="text-center">
                 <img
@@ -42,14 +42,14 @@
                 >
                 <figcaption class="text-lg">Hi, I'm Ethan! 👋</figcaption>
             </figure>
-            <h1 class="glossy-text text-[56px] max-w-[40%] text-center leading-tight">
+            <h1 class="glossy-text text-[48px] md:text-[56px] max-w-[60%] md:max-w-[40%] text-center leading-tight">
                 Solving Complex Problems in the Web
                 Ecosystem</h1>
         </section>
         <section class="border-t border-t-[#242424] pt-[120px] px-4">
             <h2 class="text-center whitespace-nowrap mb-[60px] glossy-text text-3xl font-normal">
                 Areas of Expertise</h2>
-            <ul class="flex flex-wrap gap-5">
+            <ul class="responsive-grid">
                 <li class="bg-[#1a1a1a] border border-[#242424] px-5 pb-[30px] h-[250px] md:h-[350px] w-[220px] min-w-[220px] flex flex-col justify-end items-baseline text-left gap-5">
                     <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@
             <h2 class="text-3xl glossy-text font-normal whitespace-nowrap w-min mx-auto mb-[60px]">
                 Recent Work
             </h2>
-            <ul class="flex flex-col gap-8">
+            <ul class="flex flex-col gap-[74px] md:gap-8">
                 <li class="">
                     <figure class="flex flex-col sm:flex-row sm:w-[80%] sm:h-[200px] mx-auto">
                         <a href="https://church.tech/" target="_blank"
@@ -149,7 +149,7 @@
                             <h3 class="glossy-text text-xl">Church.tech</h3>
                             <p>Architectural pattern and developer workflow
                                 contributions, development of major features</p>
-                            <ul class="flex mt-auto">
+                            <ul class="flex mt-auto flex-wrap gap-x-1 gap-y-2">
                                 <li>
                                     <svg x-comp="Wordmark" height="24"
                                          viewBox="0 0 659 165" fill="none"
@@ -704,7 +704,7 @@
         </section>
         <section
                 class="border-t border-t-[#242424] mx-auto pt-[240px] flex flex-col items-center">
-            <h2 class="glossy-text text-[56px] text-center mb-10 leading-tight max-w-[40%]">
+            <h2 class="glossy-text text-[48px] md:text-[56px] text-center mb-10 leading-tight max-w-[60%] md:max-w-[40%]">
                 Let's talk about
                 bringing you solutions.</h2>
             <a href="mailto:ethan@ethanzitting.com"
@@ -722,7 +722,7 @@
             </a>
         </section>
     </main>
-    <footer class="flex flex-row items-center justify-between px-5 py-10 max-w-[1100px] w-full mx-auto gap-[18px] border-t border-t-[#242424]">
+    <footer class="flex flex-row items-center justify-between px-5 py-10 max-w-[1100px] w-full mx-auto gap-3 md:gap-[18px] border-t border-t-[#242424]">
         <span class="mr-auto">@2024 All Rights Reserved</span>
         <a href="https://github.com/ethanzitting"
            class="glossy-link p-1"
