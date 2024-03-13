@@ -11,7 +11,7 @@ RUN bun install
 RUN apt install snapd -y
 RUN systemctl enable snapd
 RUN apt-get remove certbot
-RUN snap install --classic certbot
+# RUN snap install --classic certbot
 # RUN certbot certonly --standalone
 
 CMD ["bun", "run", "start"]
