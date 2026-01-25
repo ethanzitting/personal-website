@@ -1,0 +1,14 @@
+services:
+  site:
+    # tty: true
+    restart: unless-stopped
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    networks:
+      - caddy
+
+networks:
+  caddy:
+    external: true
