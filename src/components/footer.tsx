@@ -10,7 +10,7 @@ export const Footer: FC<Props> = ({ className }) => {
         <footer
             className={twMerge('px-5 py-10 w-full border-t border-t-border', className)}
         >
-            @2026 All Rights Reserved
+            © 2026 All Rights Reserved
         </footer>
     )
 }
