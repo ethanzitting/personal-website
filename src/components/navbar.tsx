@@ -1,25 +1,20 @@
-import Link from "next/link";
+import { ExternalLink } from "@/src/components/externalLink";
 import type { FC } from "react";
 
 export const NavBar: FC = () => {
     return (
         <nav
-            className="w-full px-2.5 py-4 flex flex-row items-center justify-center gap-3 border-b border-b-border dark:border-b-border-dark"
+            className="w-full px-2.5 py-8 flex flex-row items-center font-semibold justify-center gap-3 border-b border-b-border dark:border-b-border-dark"
         >
-            <Link href='mailto:ethan@ethanzitting.com' className="glossy-link p-1">Email</Link>
+            <ExternalLink href='mailto:ethan@ethanzitting.com'>Email</ExternalLink>
             <span>/</span>
-            <Link href='mailto:ethan@ethanzitting.com' className="glossy-link p-1">Resume</Link>
-            <span>/</span>
-            <Link
-                href="https://github.com/ethanzitting"
-                rel="noreferrer nofollow noopener"
-                target="_blank"
-                className="glossy-link p-1"
-            >
+            <ExternalLink href="https://github.com/ethanzitting">
                 GitHub
-            </Link >
+            </ExternalLink >
             <span>/</span>
-            <Link href="https://www.linkedin.com/in/ethanzitting/" rel="noreferrer nofollow noopener" target="_blank" className="glossy-link p-1">LinkedIn</Link>
+            <ExternalLink href="https://www.linkedin.com/in/ethanzitting/">
+                LinkedIn
+            </ExternalLink>
         </nav>
     )
 }

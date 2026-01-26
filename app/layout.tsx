@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
       <BackgroundDots />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen max-w-275 mx-auto bg-background dark:bg-background-dark text-text dark:text-text-dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen max-w-275 px-4 mx-auto bg-background dark:bg-background-dark text-text dark:text-text-dark`}
       >
         <NavBar />
         {children}
