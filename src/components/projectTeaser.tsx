@@ -11,7 +11,7 @@ type Props = {
 
 export const ProjectTeaser: FC<Props> = ({ href, imgUrl, title, description }) => {
     return (
-        <figure className="flex flex-row border border-border bg-button-bg rounded-lg overflow-hidden">
+        <figure className="flex flex-row border border-border dark:border-border-dark dark:bg-button-bg-dark rounded-lg overflow-hidden">
             <Link
                 href={href}
                 target="_blank"

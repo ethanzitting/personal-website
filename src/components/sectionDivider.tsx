@@ -2,6 +2,6 @@ import type { FC } from "react";
 
 export const SectionDivider: FC = () => {
     return (
-        <div className="h-px w-full bg-border" />
+        <div className="h-px w-full bg-border dark:bg-border-dark" />
     )
 }
