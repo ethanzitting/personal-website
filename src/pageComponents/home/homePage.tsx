@@ -5,7 +5,7 @@ import type { FC } from "react";
 
 export const HomePage: FC = () => {
     return ( 
-        <main className="flex w-full flex-col items-center justify-between py-32 gap-16">
+        <main className="flex w-full flex-col items-center justify-between py-32 gap-16 px-4">
             <IntroSection />
             <SectionDivider />
             <ProjectsSection />
