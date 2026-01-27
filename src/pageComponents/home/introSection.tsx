@@ -4,7 +4,7 @@ import type { FC } from "react"
 
 export const IntroSection: FC = () => {
     return (
-        <section className="flex flex-col sm:flex-row gap-8 sm:gap-16 justify-center items-center my-8">
+        <section className="flex flex-col max-w-full sm:flex-row gap-8 sm:gap-16 justify-center items-center my-8">
             <figure className="text-center flex flex-col items-center gap-2.5">
                 <Avatar />
                 <figcaption className="text-lg">Hi, I&apos;m Ethan! 👋</figcaption>
