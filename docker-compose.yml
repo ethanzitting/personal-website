@@ -1,6 +1,6 @@
 services:
   site:
-    # tty: true
+    tty: true
     restart: unless-stopped
     build:
       context: .
