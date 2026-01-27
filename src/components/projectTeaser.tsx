@@ -15,7 +15,7 @@ export const ProjectTeaser: FC<Props> = ({ href, imgUrl, title, children = undef
                 href={href}
                 target="_blank"
                 rel="noreferrer nofollow noopener"
-                className="overflow-hidden max-w-full min-w-full rounded-lg max-h-[393px] lg:max-w-[60%] lg:min-w-[60%]"
+                className="overflow-hidden max-w-full min-w-full rounded-lg max-h-[422px] lg:max-w-[60%] lg:min-w-[60%]"
             >
                 <Image
                     src={imgUrl}

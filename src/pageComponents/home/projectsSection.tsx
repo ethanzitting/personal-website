@@ -8,7 +8,7 @@ export const ProjectsSection = () => {
             <div className="flex flex-col gap-8">
                 <ProjectTeaser
                     href="https://acres.com/plat-map/map"
-                    imgUrl="/img/acres.webp" 
+                    imgUrl="/img/acres-portfolio.webp" 
                     title="Frontend Engineer @ Acres"
                 >
                     <span>Solo developed the front end of an enterprise-grade land CRM used daily by 500+ enterprise teams
