@@ -13,7 +13,7 @@ export const ProjectsSection: FC = () => {
                     imgAlt="A screenshot of Acres Intelligence, showing a builder-activity heat map beside a generated market analysis panel"
                     title="Frontend Engineer @ Acres"
                 >
-                    <span>Architected and built Acres Intelligence, an agentic AI copilot embedded in the product. It puts our data into a conversational format and operates the application on the user&apos;s behalf, changing pages, filling out forms, and controlling the map. Built in partnership with our CEO and COO to encode their domain expertise into it.</span>
+                    <span>Architected and built <ExternalLink className="inline" href="https://www.thesisdriven.com/letters/deep-dive-acres-and-ai-land-agents/">Acres Intelligence</ExternalLink>, an agentic AI copilot embedded in the product. It puts our data into a conversational format and operates the application on the user&apos;s behalf, changing pages, filling out forms, and controlling the map. Built in partnership with our CEO and COO to encode their domain expertise into it.</span>
                     <span>Led frontend development of an enterprise land CRM
                         (<ExternalLink className="inline" href="https://acres.com/plat-map/portfolio">&quot;Portfolio&quot;</ExternalLink>) used daily across hundreds of enterprise teams, replacing a costly legacy system.</span>
                     <span>Took ownership of an analytics system left orphaned for a year, recovering the lost institutional knowledge and rebuilding the end-to-end data flows to restore reliable attribution. Expanded observability from crash-only monitoring to full failure-path tracking.</span>
