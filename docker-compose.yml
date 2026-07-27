@@ -4,8 +4,11 @@ services:
     restart: unless-stopped
     build:
       context: .
-    ports:
-      - '3000:3000'
+    # No ports published. Caddy reaches this container as
+    # personal-website-site-1:3000 over the shared `caddy` network.
+    # Publishing 3000 would expose the app to the internet over plain
+    # HTTP, bypassing both Caddy's TLS and UFW (Docker writes its own
+    # iptables rules ahead of UFW's chains).
     networks:
       - caddy
 
