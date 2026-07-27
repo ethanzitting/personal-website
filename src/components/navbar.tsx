@@ -10,7 +10,7 @@ export const NavBar: FC = () => {
             <span>/</span>
             <ExternalLink href="https://github.com/ethanzitting">
                 GitHub
-            </ExternalLink >
+            </ExternalLink>
             <span>/</span>
             <ExternalLink href="https://www.linkedin.com/in/ethanzitting/">
                 LinkedIn
