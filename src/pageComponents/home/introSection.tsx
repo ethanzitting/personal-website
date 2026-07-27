@@ -10,8 +10,8 @@ export const IntroSection: FC = () => {
                 <figcaption className="text-lg">Hi, I&apos;m Ethan! 👋</figcaption>
             </figure>
             <p className="w-80 max-w-full text-lg">
-                I enjoy solving complex technical problems with code. I live in Northwest Arkansas, where I work at <ExternalLink href="https://acres.com/plat-map/map">Acres</ExternalLink>.
+                I build agentic AI systems and the frontends they live in. I&apos;m currently a frontend engineer at <ExternalLink href="https://acres.com/plat-map/map">Acres</ExternalLink> in Northwest Arkansas, where I architected <ExternalLink href="https://www.thesisdriven.com/letters/deep-dive-acres-and-ai-land-agents/">Acres Intelligence</ExternalLink>, an AI copilot that operates our mapping application on the user&apos;s behalf. Before software, I designed industrial concrete machinery and co-invented a patent.
             </p>
         </section>
     )
-} 
+}
