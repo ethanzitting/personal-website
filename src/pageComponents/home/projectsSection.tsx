@@ -9,7 +9,8 @@ export const ProjectsSection: FC = () => {
             <div className="flex flex-col gap-8">
                 <ProjectTeaser
                     href="https://acres.com/plat-map/map"
-                    imgUrl="/img/acres-portfolio.webp"
+                    imgUrl="/img/acres-intelligence.webp"
+                    imgAlt="A screenshot of Acres Intelligence, showing a builder-activity heat map beside a generated market analysis panel"
                     title="Frontend Engineer @ Acres"
                 >
                     <span>Architected and built Acres Intelligence, an agentic AI copilot embedded in the product. It puts our data into a conversational format and operates the application on the user&apos;s behalf, changing pages, filling out forms, and controlling the map. Built in partnership with our CEO and COO to encode their domain expertise into it.</span>
