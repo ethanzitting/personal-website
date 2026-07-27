@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 const title = "Ethan Zitting";
-const description = "My personal website. I build and maintain high-scale web products with real business impact.";
+const description = "Frontend engineer in Northwest Arkansas. I build agentic AI systems and the frontends they live in, currently at Acres.";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://ethanzitting.com"),

@@ -9,6 +9,8 @@ export const Avatar: FC = () => {
             alt="Ethan Zitting Headshot"
             width={240}
             height={240}
+            sizes="180px"
+            priority
         />
     )
 }
