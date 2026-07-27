@@ -6,9 +6,11 @@ type Props = PropsWithChildren & {
     href: string;
     imgUrl: string;
     title: string;
+    /** Defaults to describing the image as a screenshot of the linked site. */
+    imgAlt?: string;
 }
 
-export const ProjectTeaser: FC<Props> = ({ href, imgUrl, title, children }) => {
+export const ProjectTeaser: FC<Props> = ({ href, imgUrl, title, imgAlt, children }) => {
     return (
         <figure className="flex flex-col lg:flex-row border border-border dark:border-border-dark bg-button-bg dark:bg-button-bg-dark rounded-lg overflow-hidden">
             <ExternalLink
@@ -17,7 +19,7 @@ export const ProjectTeaser: FC<Props> = ({ href, imgUrl, title, children }) => {
             >
                 <Image
                     src={imgUrl}
-                    alt={`A screenshot of the ${title} website`}
+                    alt={imgAlt ?? `A screenshot of the ${title} website`}
                     height={640}
                     width={1000}
                 />

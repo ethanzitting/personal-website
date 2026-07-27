@@ -47,6 +47,15 @@ export const ProjectsSection: FC = () => {
                 >
                     <span>Worked alongside, and mentored a small team of junior devs, in the planning, hosting, and building of several simple websites.</span>
                 </ProjectTeaser>
+                <ProjectTeaser
+                    href="https://patents.google.com/patent/US11136769B2/en"
+                    imgUrl="/img/slipform-patent.webp"
+                    imgAlt="Figure from patent US-11136769-B2, showing the slipforming formwork assembly in isometric view"
+                    title="Co-Inventor @ Slipwell Industries"
+                >
+                    <span>Before software, I cofounded a cast-in-place concrete company and led R&amp;D on a slipforming machine for vertical, solid-concrete stairwells, directing a $450K program over 3.5 years from concept to a working prototype that poured a 35-foot stairwell.</span>
+                    <span>I designed the machine alongside an outside designer and a structural engineer, teaching myself concrete chemistry, CAD, and structural fundamentals along the way, and co-invented the resulting patented formwork system (<ExternalLink className="inline" href="https://patents.google.com/patent/US11136769B2/en">US-11136769-B2</ExternalLink>).</span>
+                </ProjectTeaser>
             </div>
         </section>
     )
