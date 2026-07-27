@@ -1,45 +1,51 @@
 import { BackgroundDots } from "@/src/components/backgroundDots";
 import { Footer } from "@/src/components/footer";
 import { NavBar } from "@/src/components/navbar";
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const title = "Ethan Zitting";
+const description = "My personal website. I build and maintain high-scale web products with real business impact.";
 
 export const metadata: Metadata = {
-  title: "Ethan Zitting",
-  description: "My personal website. I build and maintain high-scale web products with real business impact.",
+    metadataBase: new URL("https://ethanzitting.com"),
+    title,
+    description,
+    openGraph: {
+        type: "website",
+        url: "/",
+        siteName: title,
+        title,
+        description,
+    },
+    twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+    },
+};
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: ReactNode;
+    children: ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <head>
-          <meta charSet="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
-      <BackgroundDots />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen max-w-275 px-4 mx-auto bg-background dark:bg-background-dark text-text dark:text-text-dark`}
-      >
-        <NavBar />
-        {children}
-        <Footer className="mt-auto"/>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body
+                className="antialiased relative flex flex-col min-h-screen max-w-275 px-4 mx-auto bg-background dark:bg-background-dark text-text dark:text-text-dark"
+            >
+                <BackgroundDots />
+                <NavBar />
+                {children}
+                <Footer className="mt-auto" />
+            </body>
+        </html>
+    );
 }
