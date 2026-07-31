@@ -41,15 +41,6 @@ export const ProjectsSection: FC = () => {
                     <span>Built a real-time dashboard that parsed heavy, complex data to surface delayed deliveries for the client&apos;s management team, reducing administrative overhead.</span>
                 </ProjectTeaser>
                 <ProjectTeaser
-                    href="https://robotriffs.com/"
-                    imgUrl="/img/robot-riffs.webp"
-                    imgAlt="A screenshot of the Robot Riffs homepage"
-                    imgHeight={906}
-                    title="Side Project @ Robot Riffs"
-                >
-                    <span>A Twitter clone I put together in my free time to get more familiar with Laravel 10, Vue 3, and InertiaJS.</span>
-                </ProjectTeaser>
-                <ProjectTeaser
                     href="https://www.opensgf.org/"
                     imgUrl="/img/opensgf.webp"
                     imgAlt="A screenshot of the Open SGF homepage"
