@@ -40,25 +40,6 @@ export const ProjectsSection: FC = () => {
                     <span>Rebuilt the endpoint handling all of the client&apos;s online orders. It ran 10x faster, carried thorough test coverage, and shipped without a single bug.</span>
                     <span>Built a real-time dashboard that parsed heavy, complex data to surface delayed deliveries for the client&apos;s management team, reducing administrative overhead.</span>
                 </ProjectTeaser>
-                <ProjectTeaser
-                    href="https://www.opensgf.org/"
-                    imgUrl="/img/opensgf.webp"
-                    imgAlt="A screenshot of the Open SGF homepage"
-                    imgHeight={710}
-                    title="Mentor @ Open SGF"
-                >
-                    <span>Worked alongside and mentored a small team of junior devs through the planning, hosting, and building of several simple websites.</span>
-                </ProjectTeaser>
-                <ProjectTeaser
-                    href="https://patents.google.com/patent/US11136769B2/en"
-                    imgUrl="/img/slipform-patent.webp"
-                    imgHeight={657}
-                    imgAlt="Figure from patent US-11136769-B2, showing the slipforming formwork assembly in isometric view"
-                    title="Co-Inventor @ Slipwell Industries"
-                >
-                    <span>Before software, I cofounded a cast-in-place concrete company and led R&amp;D on a slipforming machine for vertical, solid-concrete stairwells, directing the program from concept to a working prototype that poured a 35-foot stairwell.</span>
-                    <span>I designed it alongside an outside designer and a structural engineer, teaching myself concrete chemistry, CAD, and structural fundamentals along the way, and co-invented the resulting patented formwork system (<ExternalLink className="inline" href="https://patents.google.com/patent/US11136769B2/en">US-11136769-B2</ExternalLink>).</span>
-                </ProjectTeaser>
             </div>
         </section>
     )
